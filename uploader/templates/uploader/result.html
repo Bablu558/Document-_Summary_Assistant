@@ -1,0 +1,353 @@
+{% comment %} <!DOCTYPE html>
+<html>
+<head>
+    <title>File Summary</title>
+</head>
+<body>
+    <h1>File Summary</h1>
+    {% if summary %}
+        <p><strong>Summary:</strong></p>
+        <p>{{ summary }}</p>
+    {% else %}
+        <p>No text could be extracted from the file.</p>
+    {% endif %}
+    <p><a href="{{ file_url }}" download>Download Original File</a></p>
+</body>
+</html> {% endcomment %}
+
+
+
+
+{% comment %} focus on ui design night end with this code {% endcomment %}
+
+
+
+{% comment %} <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Summary</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .summary {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .summary p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            text-align: center;
+            width: 100%;
+        }
+
+        a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>File Summary</h1>
+        <div class="summary">
+            {% if summary %}
+                <p><strong>Summary:</strong></p>
+                <p>{{ summary }}</p>
+            {% else %}
+                <p>No text could be extracted from the file.</p>
+            {% endif %}
+        </div>
+        <a href="{{ file_url }}" download>Download Original File</a>
+    </div>
+</body>
+</html> {% endcomment %}
+
+
+
+
+
+
+{% comment %} ui focus  {% endcomment %}
+
+
+{% comment %} <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Summary</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f4f7fc, #e0e7ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: #4a4a4a;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .summary {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 25px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .summary:hover {
+            transform: scale(1.02);
+        }
+
+        .summary p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .summary strong {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+                width: 100%;
+                max-width: 100%;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .summary {
+                padding: 18px;
+            }
+
+            .summary p {
+                font-size: 1rem;
+            }
+
+            a {
+                font-size: 1.1rem;
+                padding: 14px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>File Summary</h1>
+        <div class="summary">
+            {% if summary %}
+                <p><strong>Summary:</strong></p>
+                <p>{{ summary }}</p>
+            {% else %}
+                <p>No text could be extracted from the file.</p>
+            {% endif %}
+        </div>
+        <a href="{{ file_url }}" download>Download Original File</a>
+    </div>
+</body>
+</html> {% endcomment %}
+
+
+
+
+
+{% comment %} without error part  {% endcomment %}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Summary</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f4f7fc, #e0e7ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-size: 2.2rem;
+            color: #4a4a4a;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        .summary {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 25px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .summary:hover {
+            transform: scale(1.02);
+        }
+        .summary p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+        .summary strong {
+            font-weight: bold;
+            color: #007bff;
+        }
+        a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+                width: 100%;
+                max-width: 100%;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            .summary {
+                padding: 18px;
+            }
+            .summary p {
+                font-size: 1rem;
+            }
+            a {
+                font-size: 1.1rem;
+                padding: 14px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>File Summary</h1>
+        <div class="summary">
+            {% if summary %}
+                <p><strong>Summary:</strong></p>
+                <p>{{ summary }}</p>
+            {% else %}
+                <p>No text could be extracted from the file.</p>
+            {% endif %}
+        </div>
+        <a href="{{ file_url }}" download>Download Original File</a>
+    </div>
+</body>
+</html>
